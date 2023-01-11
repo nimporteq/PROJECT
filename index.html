@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+   ul li{
+    display: inline
+
+   }
+   ul li a{
+    margin: 30px;
+    font-size: 25px;
+    color: rgb(212, 136, 212);
+    font-style: italic;
+
+   }
+  </style>
+  <ul>
+    <li><a href="">ABOUT</a></li>
+    <li><a href="">go to reale story</a></li>
+    <li><a href="">home</a></li>
+    <li><a href="">description</a></li>
+  </ul>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div></div>
+
+    <div>
+    </div>
+   
+    <div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  <div class="speech">
+    <center<h2>BOOM REVIEWS</h2>></center>
+    
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="RES\ogp.jpg" style="width:100%">
+      <div class="text">Japanese roleplaying games</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="RES\capsule_616x353.jpg" style="width:100%">
+      <div class="text">metroidvania/exploration games</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="RES\955f1034234f4dd6885b26bdcfcf6974ifp1.webp" style="width:100%">
+      <div class="text">FPS games</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+  <div class='box grey'> <br>
+    
+    <center><h1>THE BEST OF THE BEST</h1><img src="RES\ars-games-of-the-year-2020.jpg" alt="the best of the best" style="width:50%"></center><br>
+  </div>
+  <p>in the past years ever since the 2000s,<br> the game inudstry witnessed a lot of <br>progress and amazing new experiences<br>
+    such as graphics akin to our<br> wld to some of the best stories ever told,<br> in this website we will present you<br>
+    with some of our personal selections of games that<br> have come out in recent years</p>
+  <div>
+    <div>
+      <li>
+        <center>><h1> <a href="jrpg.html"> JRPG's [japanese roleyplaying games]</a></h1>
+      </li>
+      <img src="RES\cover.jpg" alt="JRPGs">
+      </center>
+      <center>
+        <pre>A role-playing game (sometimes spelled roleplaying game, RPG) is a game in which players assume the roles
+        of characters in a fictional setting. Players take responsibility for acting out these roles within a narrative,
+        either through literal acting or through a process of structured decision-making regarding character
+        development. Actions taken within many games succeed or fail according to a formal system of rules and
+        guidelines.
+
+        There are several forms of role-playing games. The original form, sometimes called the tabletop role-playing
+        game (TRPG), is conducted through discussion, whereas in live action role-playing (LARP), players physically
+        perform their characters' actions. In both of these forms, an arranger called a game master (GM) usually
+        decides on the rules and setting to be used, while acting as the referee; each of the other players takes on the
+        role of a single character.
+
+        Several varieties of RPG also exist in electronic media, such as multiplayer text-based Multi-User Dungeons
+        (MUDs) and their graphics-based successors, massively multiplayer online role-playing games (MMORPGs).
+        Role-playing games also include single-player role-playing video games in which players control a character, or
+        team of characters, who undertake(s) quests and may include player capabilities that advance using statistical
+        mechanics. These electronic games sometimes share settings and rules with tabletop RPGs, but emphasize character
+        advancement more than collaborative storytelling.
+
+        This type of game is well-established, so some RPG-related game forms, such as trading/collectible card games
+        (CCGs) and wargames, may not be included under the definition. Some amount of role-playing activity may be
+        present in such games, but it is not the primary focus. The term role-playing game is also sometimes used to
+        describe games involving roleplay simulation and exercises used in teaching, training, and academic research.
+      </pre>
+      </center>
+      <li>
+        <center>
+          <h1> <a href="FPS.html"> FPS [first person shooter] </a></h1>
+          <img src="RES\955f1034234f4dd6885b26bdcfcf6974ifp1.webp" alt="DOOM">
+      </li>
+      </center>
+      <p>First-person shooter (FPS) is a<br> sub-genre of shooter video games<br> centered on gun and other weapon-based combat<br>
+        in a first-person perspective<br>, with the player experiencing the action through<br> the eyes of the protagonist and
+        controlling<br> the player character in a three-dimensional<br> space. The genre shares common traits with<br> other
+        shooter games<br>, and in turn falls under the action game genre. Since the genre's inception, advanced 3D and
+        pseudo-3D graphics have challenged hardware development, and multiplayer gaming has been integral.
+
+        The first-person shooter genre has been traced back to Wolfenstein 3D (1992), which has been credited with
+        creating the genre's basic archetype upon which subsequent titles were based. One such title, and the progenitor
+        of the genre's wider mainstream acceptance and popularity, was Doom (1993), often considered the most
+        influential game in this genre; for some years, the term Doom clone was used to designate this genre due to
+        Doom's influence Corridor shooter was another common name for the genre in its early years, since processing
+        limitations of the era's hardware meant that most of the action in the games had to take place in enclosed
+        areas, such as in cramped spaces like corridors and tunnels
+
+        1998's Half-Life—along with its 2004 sequel Half-Life 2—enhanced the narrative and puzzle elements. In
+        1999, the Half-Life mod Counter-Strike was released and, together with Doom, is perhaps one of the most
+        influential first-person shooters. GoldenEye 007, released in 1997, was a landmark first-person shooter for home
+        consoles, while the Halo series heightened the console's commercial and critical appeal as a platform for
+        first-person shooter titles. In the 21st century, the first-person shooter is the most commercially viable video
+        game genre, and in 2016, shooters accounted for over 27% of all video game sales.</p>
+      <center>
+        <li>
+          <h1><a href="metroidvania.html"> metroidvania games </a></h1>
+          <img src="RES\10-best-metroidvania-games-ever-made-ranked-scaled.avif" alt="metroidvania">
+        </li>
+      </center>
+      <center>
+        <pre>Metroidvania is a sub-genre of action-adventure video games and platformers focused on guided non-linearity
+        and utility-gated exploration and progression. The term is a portmanteau of the names of the video game series
+        Metroid and Castlevania, based on the template from Metroid from 1986, Castlevania II from 1987, and
+        Castlevania: Symphony of the Night from 1997. Since Symphony of the Night creator Koji Igarashi took more
+        inspiration from The Legend of Zelda series, this gameplay formula of action-exploration is less commonly known
+        as a Zeldavania or Zeldatroid.
+
+        
+        The first Metroid game in 1986 established principles of the non-linear platformer that were refined through
+        multiple iterations, with Super Metroid in 1994 considered to have polished the style of gameplay core to
+        Metroidvanias. Castlevania: Symphony of the Night in 1997 is considered the defining Metroidvania game,
+        incorporating role-playing game elements from The Legend of Zelda series with non-linear traversal within the
+        Castlevania series; most subsequent Castlevania games followed its approach and refined the genre. Symphony of
+        the Night's assistant director, Koji Igarashi, is credited with establishing key principles of Metroidvanias
+        through his work on other Castlevania games. In the 2010s, a resurgence in Metroidvanias came about due to
+        several critically praised, independently developed games.</pre>
+      </center>
+
+      <a> </a>
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>
